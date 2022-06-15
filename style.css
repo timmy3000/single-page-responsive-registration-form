@@ -1,0 +1,204 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  	font-size: 1rem;
+	font-family: "Poppins", sans-serif;
+	background: url("images/bg-intro-mobile.png");
+	background-color: hsl(0, 100%, 74%);
+	height: 100vh;
+}
+
+a {
+  	text-decoration: none;
+}
+
+a:hover {
+  	border-bottom: 1px solid hsl(0, 100%, 74%);
+}
+
+.bold {
+  	font-weight: 600;
+}
+
+.highlight {
+  	color: hsl(0, 100%, 74%);
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	margin-top: 3em;
+	margin-bottom: 0.75em;
+	max-width: 500px;
+}
+
+.signup_section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.text_content p {
+	text-align: center;
+	color: white;
+	margin-bottom: 3em;
+	opacity: 0.8;
+	max-width: 500px;
+}
+
+.offer_container {
+	background-color: hsl(248, 32%, 49%);
+	border-radius: 6px;
+	padding: 1em 4em;
+	margin-bottom: 1.5em;
+	max-width: 500px;
+	box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.offer_container p {
+	font-size: 0.875rem;
+	text-align: center;
+	color: white;
+}
+
+.signup_form {
+	text-align: center;
+	background-color: white;
+	padding: 1em;
+	border-radius: 8px;
+	max-width: 500px;
+	box-shadow: 0px 8px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	outline: unset;
+	width: 100%;
+	padding: 1em;
+	border: 1px solid hsl(246, 25%, 77%);
+	border-radius: 6px;
+	font-family: "Poppins", sans-serif;
+	margin-top: 0.75em;
+	font-weight: bolder;
+	color: #444;
+}
+
+input[type="text"]::placeholder,
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+	font-family: "Poppins", sans-serif;
+	color: hsl(249, 10%, 26%);
+	font-weight: 600;
+	opacity: 0.7;
+}
+
+input:focus {
+	border: 1px solid hsl(245, 7%, 35%);
+}
+
+input:focus::placeholder {
+  	color: transparent;
+}
+
+.input_container {
+	width: 100%;
+	position: relative;
+}
+
+.error_icon {
+	display: none;
+	position: absolute;
+	top: 25%;
+	right: 5%;
+}
+
+.error_message {
+	font-size: 0.75rem;
+	font-style: italic;
+	text-align: right;
+	color: hsl(0, 100%, 74%);
+	margin-top: 0.5em;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 1em;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	background-color: hsl(154, 59%, 51%);
+	border: none;
+	border-radius: 6px;
+	margin: 0.75em 0;
+	cursor: pointer;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+input[type="submit"]:hover {
+  	opacity: .8;
+}
+
+.signup_form p {
+	width: 75%;
+	font-size: 0.625rem;
+	color: hsl(246, 25%, 77%);
+	margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100vh;
+		gap: 6em;
+	}
+
+	h1 {
+		font-size: 3rem;
+		text-align: left;
+		margin-bottom: 0.25em;
+	}
+
+	.text_content p {
+		text-align: left;
+	}
+
+	.signup_form {
+		width: 600px;
+		padding: 2.5em;
+	}
+
+	input[type="text"],
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		padding: 1.5em;
+		margin-top: 1.25em;
+	}
+
+	.error_icon {
+		display: none;
+		position: absolute;
+		top: 35%;
+		right: 5%;
+	}
+
+	input[type="submit"] {
+		padding: 1.5em;
+		margin: 1.25em 0;
+	}
+
+	.signup_form p {
+		width: 80%;
+	}
+}
