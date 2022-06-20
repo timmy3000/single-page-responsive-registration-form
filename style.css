@@ -154,7 +154,7 @@ input[type="submit"]:hover {
 	margin: 0 auto;
 }
 
-@media (min-width: 1000px) {
+@media screen and (min-width: 1440px) {
 	.container {
 		display: flex;
 		align-items: center;
